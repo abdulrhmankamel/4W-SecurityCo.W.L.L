@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>4W - Cleaning Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo" id="logo">
+        <a href="index.html">
+          <img src="4W.png" alt="4W Logo" />
+        </a>
+      </div>
+      <nav class="nav">
+        <button class="nav-button" id="nav-home">Home</button>
+        <button class="nav-button" id="nav-about">About</button>
+        <button class="nav-button" id="nav-contact">Contact</button>
+        <div class="language-dropdown">
+          <button id="lang-btn" class="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span>ENG</span>
+            <span class="arrow">▼</span>
+          </button>
+          <ul id="lang-list" class="lang-list" role="listbox" aria-label="Select language">
+            <li role="option" data-lang="eng" aria-selected="true">English</li>
+            <li role="option" data-lang="ar" aria-selected="false">العربية</li>
+          </ul>
+        </div>
+        <img src="user-icon.png" alt="User Icon" class="user-icon" />
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="service-hero">
+      <div class="container service-hero-content">
+        <h1 id="cleaning-hero-title">Professional Cleaning Services</h1>
+        <p id="cleaning-hero-text">Experience excellence in cleanliness with our comprehensive cleaning solutions tailored to your needs.</p>
+      </div>
+    </section>
+
+    <section class="detailed-services">
+      <div class="container">
+        <h2 id="services-title" class="section-title">Our Cleaning Services</h2>
+        <div class="service-grid">
+          <div class="service-item">
+            <div class="service-icon">🏢</div>
+            <h3 id="commercial-title">Commercial Cleaning</h3>
+            <ul>
+              <li id="commercial-1">Office buildings and workspaces</li>
+              <li id="commercial-2">Retail stores and shopping centers</li>
+              <li id="commercial-3">Hotels and hospitality venues</li>
+              <li id="commercial-4">Regular maintenance programs</li>
+            </ul>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">🏠</div>
+            <h3 id="residential-title">Residential Cleaning</h3>
+            <ul>
+              <li id="residential-1">Homes and apartments</li>
+              <li id="residential-2">Move-in/move-out cleaning</li>
+              <li id="residential-3">Deep cleaning services</li>
+              <li id="residential-4">Customized cleaning plans</li>
+            </ul>
+          </div>
+
+          <div class="service-item">
+            <div class="service-icon">🏥</div>
+            <h3 id="specialized-title">Specialized Cleaning</h3>
+            <ul>
+              <li id="specialized-1">Medical facilities</li>
+              <li id="specialized-2">Educational institutions</li>
+              <li id="specialized-3">Industrial spaces</li>
+              <li id="specialized-4">Post-construction cleanup</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose-security">
+      <div class="container">
+        <h2 id="why-choose-title">Why Choose Our Cleaning Services</h2>
+        <div class="benefits-container">
+          <div class="benefit">
+            <h4 id="eco-title">Eco-Friendly Solutions</h4>
+            <p id="eco-text">We use environmentally responsible cleaning products and methods to protect both your space and the planet.</p>
+          </div>
+
+          <div class="benefit">
+            <h4 id="trained-title">Trained Professionals</h4>
+            <p id="trained-text">Our cleaning staff undergoes rigorous training to deliver consistent, high-quality service.</p>
+          </div>
+
+          <div class="benefit">
+            <h4 id="custom-title">Customized Programs</h4>
+            <p id="custom-text">We develop cleaning programs tailored to your specific needs and schedule.</p>
+          </div>
+
+          <div class="benefit">
+            <h4 id="quality-title">Quality Assurance</h4>
+            <p id="quality-text">Regular quality checks and feedback systems ensure consistent service excellence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <h2 id="contact-title">Get in Touch</h2>
+        <p id="contact-text">Ready to experience our professional cleaning services? Contact us today for a free consultation.</p>
+        <div class="contact-buttons">
+          <a href="tel:+97366993322" class="contact-button phone" id="phone-button">Call Us Now</a>
+          <a href="https://wa.me/97366993322" class="contact-button whatsapp" id="whatsapp-button">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p id="footer-text">© 2025 4W. All rights reserved.</p>
+  </footer>
+
+  <a href="https://wa.me/97366993322" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="whatsapp-icon.png" alt="WhatsApp Icon" />
+  </a>
+
+  <script src="lang.js"></script>
+</body>
+</html>

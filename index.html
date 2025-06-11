@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>4W - Modern Security Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <!-- Logo image instead of text -->
+      <div class="logo" id="logo">
+        <img src="4W.png" alt="4W Logo" />
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <button class="nav-button" id="nav-about">About</button>
+        <button class="nav-button" id="nav-contact">Contact</button>
+        <div class="language-dropdown">
+          <button id="lang-btn" class="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span>ENG</span>
+            <span class="arrow">▼</span>
+          </button>
+          <ul id="lang-list" class="lang-list" role="listbox" aria-label="Select language">
+            <li role="option" data-lang="eng" aria-selected="true">English</li>
+            <li role="option" data-lang="ar" aria-selected="false">العربية</li>
+          </ul>
+        </div>
+        <img src="user-icon.png" alt="User Icon" class="user-icon" />
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container fade-in">
+      <div class="hero-text">
+        <h2 id="hero-title"><span class="welcome-text">WELCOME TO</span><span class="company-name">4W</span></h2>
+        <div class="separator-line"></div>
+        <p id="hero-subtitle">Your trusted partner in modern security and solutions.</p>
+      </div>
+      <div class="hero-video">
+        <div style="position: relative; overflow: hidden; padding-top: 56.25%;">
+          <iframe src="https://share.synthesia.io/embeds/videos/b3b48ca7-f978-407d-912e-59b42f02ec59"
+                  loading="lazy"
+                  title="Synthesia video player - Your AI video"
+                  allowfullscreen
+                  allow="encrypted-media; fullscreen;"
+                  style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container about-container">
+        <div class="about-image">
+          <img src="security_team.jpg" alt="Professional Security Team" />
+        </div>
+        <div class="about-content">
+          <h3 id="about-title" class="about-title">About Us</h3>
+          <p id="about-text" class="about-text">4W Security Co. W.L.L. is a leading provider of comprehensive security and cleaning services based in Manama, Kingdom of Bahrain. With a commitment to excellence, integrity, and innovation, 4W Security delivers tailored solutions to both public and private sectors.</p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <span id="feature-professional">Professional Team</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <span id="feature-support">24/7 Support</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <span id="feature-modern">Modern Solutions</span>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">✓</div>
+              <span id="feature-quality">Quality Service</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h3 id="why-choose-title" class="section-title">Why Choose Us</h3>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
+            <h4 id="expert-security-title">Expert Security</h4>
+            <p id="expert-security-text">Trained professionals using latest security technologies</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">✨</div>
+            <h4 id="premium-cleaning-title">Premium Cleaning</h4>
+            <p id="premium-cleaning-text">Eco-friendly cleaning with attention to detail</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h4 id="fast-response-title">Fast Response</h4>
+            <p id="fast-response-text">Quick response times to all service requests</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💪</div>
+            <h4 id="reliable-service-title">Reliable Service</h4>
+            <p id="reliable-service-text">Consistent and dependable service delivery</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div id="stats-clients-value" class="stat-number">500+</div>
+            <div id="stats-clients-title" class="stat-label">Clients Served</div>
+          </div>
+          <div class="stat-item">
+            <div id="stats-staff-value" class="stat-number">50+</div>
+            <div id="stats-staff-title" class="stat-label">Expert Staff</div>
+          </div>
+          <div class="stat-item">
+            <div id="stats-experience-value" class="stat-number">10+</div>
+            <div id="stats-experience-title" class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div id="stats-support-value" class="stat-number">24/7</div>
+            <div id="stats-support-title" class="stat-label">Support Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <h3 id="services-title" class="section-title">Our Services</h3>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="pexels-tima-miroshnichenko-6195129.jpg" alt="Cleaning Service" class="service-main-img" />
+            <div class="service-content">
+              <h4 id="cleaning-title">Cleaning Service</h4>
+              <p id="cleaning-text">Our expert cleaning team ensures your premises are spotless, safe, and well-maintained with eco-friendly solutions.</p>
+              <a href="cleaning.html" class="service-button" id="cleaning-button">Know More</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img src="pexels-atypeek-25391056.jpg" alt="Security Service" class="service-main-img" />
+            <div class="service-content">
+              <h4 id="security-title">Security Service</h4>
+              <p id="security-text">Professional guards and surveillance to protect your property and people around the clock.</p>
+              <a href="security.html" class="service-button" id="security-button">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact container fade-in">
+      <h3 id="contact-title">Contact</h3>
+      <form>
+        <input type="text" id="input-name" placeholder="Your Name" required />
+        <input type="email" id="input-email" placeholder="Your Email" required />
+        <textarea id="input-message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p id="footer-text">© 2025 4W. All rights reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/97366993322" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="whatsapp-icon.png" alt="WhatsApp Icon" />
+  </a>
+
+  <script src="lang.js"></script>
+  <script>
+    // Language switcher
+    const langBtn = document.getElementById("lang-btn");
+    const langList = document.getElementById("lang-list");
+    langBtn.addEventListener("click", () => {
+      langList.classList.toggle("show");
+    });
+
+    // Mobile menu
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const nav = document.querySelector(".nav");
+    
+    mobileMenuBtn.addEventListener("click", () => {
+      nav.classList.toggle("active");
+      mobileMenuBtn.classList.toggle("active");
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!nav.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+        nav.classList.remove("active");
+        mobileMenuBtn.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
