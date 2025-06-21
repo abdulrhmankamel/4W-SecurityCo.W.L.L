@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>4W - Modern Security Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css?v=2.0" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo" id="logo">
+        <img src="4W.png" alt="4W Logo" />
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav">
+        <button class="nav-button" id="nav-home">Home</button>
+        <button class="nav-button" id="nav-about">About</button>
+        <button class="nav-button" id="nav-contact">Contact</button>
+        <div class="language-dropdown">
+          <button id="lang-btn" class="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+            <span>ENG</span>
+            <span class="arrow">▼</span>
+          </button>
+          <ul id="lang-list" class="lang-list" role="listbox" aria-label="Select language">
+            <li role="option" data-lang="eng" aria-selected="true">English</li>
+            <li role="option" data-lang="ar" aria-selected="false">العربية</li>
+          </ul>
+        </div>
+        <img src="user-icon.png" alt="User Icon" class="user-icon" />
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <div class="hero-bg">
+      <section class="hero container fade-in">
+        <div class="hero-text">
+          <h2 id="hero-title">
+            <span class="welcome-text" data-translate-key="welcomeText">WELCOME TO</span>
+            <span class="company-name" data-translate-key="companyName">4W</span>
+          </h2>
+          <div class="separator-line"></div>
+          <p id="hero-subtitle" data-translate-key="heroSubtitle">Your trusted partner in modern security and cleaning solutions.</p>
+          <a href="questionnaire.html" class="journey-button" data-translate-key="journeyButton">Start Your Journey</a>
+        </div>
+        <div class="hero-video">
+          <div style="position: relative; overflow: hidden; padding-top: 56.25%;">
+            <video id="hero-video" controls style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden; background: #000;">
+              <source src="introduce_4w.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Section -->
+    <section class="about-section">
+      <div class="container about-container">
+        <div class="about-image">
+          <img src="security_team.jpg" alt="Professional Security Team" />
+        </div>
+        <div class="about-content">
+          <h3 id="about-title" class="about-title" data-translate-key="aboutTitle">About Us</h3>
+          <p id="about-text" class="about-text" data-translate-key="aboutText">4W Security Co. W.L.L., based in Manama, Bahrain, is a trusted provider of security and cleaning services. With over 20 years of experience, we serve both public and private sectors with tailored solutions. Our team of carefully selected experts enhances staff performance in security and maintenance, supported by a dedicated training division aligned with each site's needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+      <div class="container">
+        <h3 id="why-choose-title" class="section-title" data-translate-key="whyChooseTitle">Why Choose Us</h3>
+        <div class="benefits-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">🛡️</div>
+            <h4 id="expert-security-title" data-translate-key="expertSecurityTitle">Expert Security</h4>
+            <p id="expert-security-text" data-translate-key="expertSecurityText">Trained professionals using latest security technologies</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">✨</div>
+            <h4 id="premium-cleaning-title" data-translate-key="premiumCleaningTitle">Premium Cleaning</h4>
+            <p id="premium-cleaning-text" data-translate-key="premiumCleaningText">Eco-friendly cleaning with attention to detail</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">⚡</div>
+            <h4 id="fast-response-title" data-translate-key="fastResponseTitle">Fast Response</h4>
+            <p id="fast-response-text" data-translate-key="fastResponseText">Quick response times to all service requests</p>
+          </div>
+          <div class="benefit-card">
+            <div class="benefit-icon">💪</div>
+            <h4 id="reliable-service-title" data-translate-key="reliableServiceTitle">Reliable Service</h4>
+            <p id="reliable-service-text" data-translate-key="reliableServiceText">Consistent and dependable service delivery</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div id="stats-clients-value" class="stat-number" data-target="500">0+</div>
+            <div id="stats-clients-title" class="stat-label" data-translate-key="statsClientsTitle">Clients Served</div>
+          </div>
+          <div class="stat-item">
+            <div id="stats-staff-value" class="stat-number" data-target="50">0+</div>
+            <div id="stats-staff-title" class="stat-label" data-translate-key="statsStaffTitle">Expert Staff</div>
+          </div>
+          <div class="stat-item">
+            <div id="stats-experience-value" class="stat-number" data-target="10">0+</div>
+            <div id="stats-experience-title" class="stat-label" data-translate-key="statsExperienceTitle">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div id="stats-management-value" class="stat-number" data-target="25">0+</div>
+            <div id="stats-management-title" class="stat-label" data-translate-key="managementTitle">Management</div>
+          </div>
+          <div class="stat-item">
+            <div id="stats-support-value" class="stat-number">24/7</div>
+            <div id="stats-support-title" class="stat-label" data-translate-key="statsSupportTitle">Support Available</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <h3 id="services-title" class="section-title" data-translate-key="servicesTitle">Our Services</h3>
+        <div class="services-grid">
+          <div class="service-card">
+            <img src="pexels-tima-miroshnichenko-6195129.jpg" alt="Cleaning Service" class="service-main-img" />
+            <div class="service-content">
+              <h4 id="cleaning-title" data-translate-key="cleaningTitle">Cleaning Service</h4>
+              <p id="cleaning-text" data-translate-key="cleaningText">Our expert cleaning team ensures your premises are spotless, safe, and well-maintained with eco-friendly solutions.</p>
+              <a href="cleaning.html" class="service-button" id="cleaning-button" data-translate-key="cleaningButton">Know More</a>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <img src="pexels-atypeek-25391056.jpg" alt="Security Service" class="service-main-img" />
+            <div class="service-content">
+              <h4 id="security-title" data-translate-key="securityTitle">Security Service</h4>
+              <p id="security-text" data-translate-key="securityText">Professional guards and surveillance to protect your property and people around the clock.</p>
+              <a href="security.html" class="service-button" id="security-button" data-translate-key="securityButton">Know More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact container fade-in">
+      <h3 id="contact-title" data-translate-key="contactTitle">Contact</h3>
+      <form>
+        <input type="text" id="input-name" placeholder="Your Name" data-translate-key="inputName" required />
+        <input type="email" id="input-email" placeholder="Your Email" data-translate-key="inputEmail" required />
+        <textarea id="input-message" rows="4" placeholder="Your Message" data-translate-key="inputMessage" required></textarea>
+        <button type="submit" id="submit-btn" data-translate-key="submitBtn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-brand">
+            <img src="bahrain-flag.png" alt="Bahrain Flag" class="bahrain-flag" />
+          </div>
+          <p class="footer-description" data-translate-key="footerDescription">Your trusted partner in modern security and cleaning solutions in Bahrain.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title" data-translate-key="quickLinks">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about" data-translate-key="aboutUsLink">About Us</a></li>
+            <li><a href="security.html" data-translate-key="securityServicesLink">Security Services</a></li>
+            <li><a href="cleaning.html" data-translate-key="cleaningServicesLink">Cleaning Services</a></li>
+            <li><a href="#contact" data-translate-key="contactLink">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title" data-translate-key="contactInfo">Contact Info</h4>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span data-translate-key="address">Manama, Bahrain</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+97366993322"><span dir="ltr">+973 6699 3322</span></a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@4wsecurity.com">info@4wsecurity.com</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="footer-section">
+          <h4 class="footer-title" data-translate-key="followUs">Follow Us</h4>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="Follow us on LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="social-icon" aria-label="Follow us on Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/97366993322" class="social-icon" aria-label="Chat on WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright" id="footer-text" data-translate-key="footerText">© 2025 4W Security Co. W.L.L. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#" data-translate-key="privacyPolicy">Privacy Policy</a>
+          <a href="#" data-translate-key="termsOfService">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/97366993322" class="whatsapp-button" target="_blank" aria-label="Chat on WhatsApp">
+    <img src="whatsapp-icon.png" alt="WhatsApp Icon" />
+  </a>
+
+  <!-- Quiz Modal -->
+  <div id="quiz-modal" class="quiz-modal" style="display: none;">
+    <div class="quiz-modal-content">
+      <span class="close-button">&times;</span>
+      <h2 id="quiz-question">What type of service are you looking for?</h2>
+      <div id="quiz-options" class="quiz-options"></div>
+      <button id="quiz-next-btn" class="quiz-next-btn" disabled>Next</button>
+    </div>
+  </div>
+
+  <script src="lang.js"></script>
+  <script>
+    // BULLETPROOF STATISTICS COUNTER - Define this FIRST
+    function startCounters() {
+      console.log('Starting bulletproof counters...');
+      
+      // Get all counter elements
+      const counters = [
+        { element: document.getElementById('stats-clients-value'), target: 500, step: 10 },
+        { element: document.getElementById('stats-staff-value'), target: 50, step: 1 },
+        { element: document.getElementById('stats-experience-value'), target: 10, step: 1 },
+        { element: document.getElementById('stats-management-value'), target: 25, step: 1 }
+      ];
+      
+      // Start each counter
+      counters.forEach(counter => {
+        if (counter.element) {
+          let current = 0;
+          const interval = setInterval(() => {
+            current += counter.step;
+            if (current >= counter.target) {
+              current = counter.target;
+              clearInterval(interval);
+            }
+            counter.element.textContent = current + '+';
+          }, 50);
+        }
+      });
+    }
+
+    // Reset counters function
+    function resetCounters() {
+      console.log('Resetting counters...');
+      const counters = [
+        document.getElementById('stats-clients-value'),
+        document.getElementById('stats-staff-value'),
+        document.getElementById('stats-experience-value'),
+        document.getElementById('stats-management-value')
+      ];
+      
+      counters.forEach(counter => {
+        if (counter) {
+          counter.textContent = '0+';
+        }
+      });
+      
+      // Start counters after reset
+      setTimeout(startCounters, 100);
+    }
+
+    // Expose functions globally IMMEDIATELY
+    window.startCounters = startCounters;
+    window.resetCounters = resetCounters;
+    window.restartCountingAnimation = resetCounters;
+
+    const pageElements = {
+      welcomeText: document.querySelector(".welcome-text"),
+      companyName: document.querySelector(".company-name"),
+      heroSubtitle: document.getElementById("hero-subtitle"),
+      journeyButton: document.querySelector(".journey-button"),
+      aboutTitle: document.getElementById("about-title"),
+      aboutText: document.getElementById("about-text"),
+      featureProfessional: document.getElementById("feature-professional"),
+      featureSupport: document.getElementById("feature-support"),
+      featureModern: document.getElementById("feature-modern"),
+      featureQuality: document.getElementById("feature-quality"),
+      whyChooseTitle: document.getElementById("why-choose-title"),
+      expertSecurityTitle: document.getElementById("expert-security-title"),
+      expertSecurityText: document.getElementById("expert-security-text"),
+      premiumCleaningTitle: document.getElementById("premium-cleaning-title"),
+      premiumCleaningText: document.getElementById("premium-cleaning-text"),
+      fastResponseTitle: document.getElementById("fast-response-title"),
+      fastResponseText: document.getElementById("fast-response-text"),
+      reliableServiceTitle: document.getElementById("reliable-service-title"),
+      reliableServiceText: document.getElementById("reliable-service-text"),
+      statsClientsTitle: document.getElementById("stats-clients-title"),
+      statsClientsValue: document.getElementById("stats-clients-value"),
+      statsStaffTitle: document.getElementById("stats-staff-title"),
+      statsStaffValue: document.getElementById("stats-staff-value"),
+      statsExperienceTitle: document.getElementById("stats-experience-title"),
+      statsExperienceValue: document.getElementById("stats-experience-value"),
+      statsSupportTitle: document.getElementById("stats-support-title"),
+      statsSupportValue: document.getElementById("stats-support-value"),
+      servicesTitle: document.getElementById("services-title"),
+      cleaningTitle: document.getElementById("cleaning-title"),
+      cleaningText: document.getElementById("cleaning-text"),
+      cleaningButton: document.getElementById("cleaning-button"),
+      securityTitle: document.getElementById("security-title"),
+      securityText: document.getElementById("security-text"),
+      securityButton: document.getElementById("security-button"),
+      contactTitle: document.getElementById("contact-title"),
+      contactText: document.getElementById("contact-text"),
+      inputName: document.getElementById("input-name"),
+      inputEmail: document.getElementById("input-email"),
+      inputMessage: document.getElementById("input-message"),
+      submitBtn: document.getElementById("submit-btn"),
+      trainedTitle: document.getElementById("trained-title"),
+      trainedText: document.getElementById("trained-text"),
+      customTitle: document.getElementById("custom-title"),
+      customText: document.getElementById("custom-text"),
+    };
+
+    window.translatePageSpecificElements = (lang) => {
+      // This function is called by the language system
+      // The language system already handles all elements with data-translate-key
+      console.log('Page specific elements translated for:', lang);
+    };
+
+    // Mobile menu functionality
+    const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+    const nav = document.querySelector(".nav");
+    
+    console.log('Mobile menu elements found:', {
+      mobileMenuBtn: !!mobileMenuBtn,
+      nav: !!nav
+    });
+    
+    if (mobileMenuBtn && nav) {
+      // Toggle mobile menu
+      mobileMenuBtn.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log('Hamburger button clicked!');
+        mobileMenuBtn.classList.toggle("active");
+        nav.classList.toggle("active");
+        console.log('Menu state:', {
+          buttonActive: mobileMenuBtn.classList.contains("active"),
+          navActive: nav.classList.contains("active")
+        });
+      });
+      
+      // Close menu when clicking on a nav button
+      const navButtons = document.querySelectorAll(".nav-button");
+      navButtons.forEach(button => {
+        button.addEventListener("click", function() {
+          mobileMenuBtn.classList.remove("active");
+          nav.classList.remove("active");
+        });
+      });
+      
+      // Close menu when clicking outside
+      document.addEventListener("click", function(e) {
+        if (!mobileMenuBtn.contains(e.target) && !nav.contains(e.target)) {
+          mobileMenuBtn.classList.remove("active");
+          nav.classList.remove("active");
+        }
+      });
+    } else {
+      console.error('Mobile menu elements not found!');
+    }
+
+    // Start counters on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(startCounters, 1000);
+    });
+
+    // Start counters when scrolling to statistics section
+    let countersStarted = false;
+    window.addEventListener('scroll', function() {
+      if (!countersStarted) {
+        const statsSection = document.querySelector('.statistics');
+        if (statsSection) {
+          const rect = statsSection.getBoundingClientRect();
+          if (rect.top < window.innerHeight) {
+            countersStarted = true;
+            startCounters();
+          }
+        }
+      }
+    });
+
+    // Quiz functionality
+    const journeyButton = document.querySelector(".journey-button");
+    const quizModal = document.getElementById("quiz-modal");
+    const closeButton = document.querySelector(".quiz-modal .close-button");
+    const quizQuestion = document.getElementById("quiz-question");
+    const quizOptions = document.getElementById("quiz-options");
+    const quizNextBtn = document.getElementById("quiz-next-btn");
+
+    let currentQuestionIndex = 0;
+    let selectedOption = null;
+
+    // --- QUIZ MODAL TRANSLATION SUPPORT ---
+    function translate(key) {
+      let lang = document.documentElement.lang || 'eng';
+      if (lang === 'en') lang = 'eng';
+      if (lang === 'ar') lang = 'ar';
+      if (window.translations && window.translations[lang] && window.translations[lang][key]) {
+        return window.translations[lang][key];
+      }
+      return key;
+    }
+
+    const questions = [
+      {
+        questionKey: "q1",
+        optionsKeys: ["q1_opt1", "q1_opt2"],
+      },
+      {
+        questionKey: "q2",
+        optionsKeys: ["q2_opt1", "q2_opt2", "q2_opt3"],
+      },
+      {
+        questionKey: "q3",
+        optionsKeys: ["q3_opt1", "q3_opt2", "q3_opt3"],
+      },
+      {
+        questionKey: "q4",
+        optionsKeys: ["q4_opt1", "q4_opt2", "q4_opt3"],
+      },
+      {
+        questionKey: "thankYouMessage",
+        optionsKeys: [],
+        isFinal: true,
+      },
+    ];
+
+    function displayQuestion() {
+      const questionData = questions[currentQuestionIndex];
+      quizQuestion.textContent = translate(questionData.questionKey);
+      quizOptions.innerHTML = "";
+      quizNextBtn.disabled = true;
+      selectedOption = null;
+
+      if (questionData.isFinal) {
+        quizOptions.style.display = "none";
+        quizNextBtn.style.display = "none";
+      } else {
+        quizOptions.style.display = "flex";
+        quizNextBtn.style.display = "block";
+
+        questionData.optionsKeys.forEach((optionKey) => {
+          const optionElement = document.createElement("div");
+          optionElement.classList.add("quiz-option");
+          optionElement.textContent = translate(optionKey);
+          optionElement.addEventListener("click", () => {
+            document.querySelectorAll(".quiz-option").forEach((opt) => {
+              opt.classList.remove("selected");
+            });
+            optionElement.classList.add("selected");
+            selectedOption = optionElement.textContent;
+            quizNextBtn.disabled = false;
+          });
+          quizOptions.appendChild(optionElement);
+        });
+      }
+    }
+
+    // Update quiz modal on language change
+    document.addEventListener('languageChanged', () => {
+      displayQuestion();
+    });
+
+    // On page load, after translations are loaded, show the first question
+    window.addEventListener('languageLoaded', () => {
+      displayQuestion();
+    });
+
+    closeButton.addEventListener("click", () => {
+      quizModal.style.display = "none";
+    });
+
+    quizNextBtn.addEventListener("click", () => {
+      if (selectedOption) {
+        // Logic to determine next question based on answer
+        if (currentQuestionIndex === 0) {
+          if (selectedOption === "Security Services") {
+            currentQuestionIndex = 1; // Go to Security Q
+          } else if (selectedOption === "Cleaning Services") {
+            currentQuestionIndex = 2; // Go to Cleaning Q
+          }
+        } else {
+          currentQuestionIndex = 3; // Go to How soon Q
+        }
+
+        if (currentQuestionIndex < questions.length) {
+          displayQuestion();
+        } else {
+          // This case should ideally be caught by isFinal property
+          quizModal.style.display = "none";
+        }
+      }
+    });
+
+    // Close modal when clicking outside of the content area
+    window.addEventListener("click", (event) => {
+      if (event.target === quizModal) {
+        quizModal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
